@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /* colocar inherit aqui e definir o valor no body é uma prática mais aceita na comunidade, devido a plugins e bibliotecas de terceiros */
+}
+
+html {
+    font-size: 62.5%; /* colocar 10px como padrão facilita na hora de calcular o valor para rem. Colocar em % faz com que o navegador mude conforme o zoom do usuário. 62.5%*16px (padrão de navegadores) = 10px, o que esperamos */
+}
+
+/* Colocar todas as definições de fonte no body, não no * */
+body {
+    box-sizing: border-box;
+}
