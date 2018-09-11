@@ -8,6 +8,17 @@
 
 html {
     font-size: 62.5%; /* colocar 10px como padrão facilita na hora de calcular o valor para rem. Colocar em % faz com que o navegador mude conforme o zoom do usuário. 62.5%*16px (padrão de navegadores) = 10px, o que esperamos */
+
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+
 }
 
 /* Colocar todas as definições de fonte no body, não no * */
